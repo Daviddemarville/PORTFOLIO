@@ -65,7 +65,7 @@ const About = () => {
         </div>
         <div className="mt-4">
           <a
-            href="./assets/CV_David_dM.pdf"
+            href=".*/cv_David-de-Marville.pdf"
             download="CV_David_dM.pdf"
             className="text-blue-600 hover:text-blue-800 font-bold"
           >
