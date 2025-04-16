@@ -75,20 +75,20 @@ const ProjetsPersonnels = () => {
   return (
     <div className="p-4">
       <h2 className="text-2xl font-bold text-gray-800">Projets Personnels</h2>
-      <div class="mt-2 text-gray-950">
+      <div className="mt-2 text-gray-950">
   <p>
     <strong>Chaque projet présenté ici raconte une histoire :</strong> celle d’un défi relevé, d’un apprentissage, d’une collaboration ou d’un besoin auquel j’ai répondu par le code.
   </p>
-  <p class="mt-2">
+  <p className="mt-2">
     <strong>Bienvenue dans mon univers de développement !</strong>
   </p>
-  <p class="mt-2">
+  <p className="mt-2">
     Découvrez des créations uniques, allant de sites associatifs à des applications interactives, toutes pensées pour apporter une véritable valeur ajoutée.
   </p>
-  <p class="mt-2">
+  <p className="mt-2">
     Qu’ils soient personnels ou issus de ma formation, ces projets illustrent ma passion pour le développement web.
   </p>
-  <p class="mt-2">
+  <p className="mt-2">
     <strong>N'hésitez pas à explorer !</strong>
   </p>
 </div>

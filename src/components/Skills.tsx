@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const skills = [
   {
@@ -37,7 +37,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className=" py-10 px-4 md:px-10">
+    <section className="py-10 px-4 md:px-10">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Compétences techniques</h2>
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {skills.map((skill, index) => (
