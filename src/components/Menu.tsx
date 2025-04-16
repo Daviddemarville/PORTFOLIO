@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
@@ -7,7 +6,13 @@ const Menu = () => {
       <li>
         <Link
           to="/projets"
-          className="inline-block transition-transform duration-300 ease-in-out transform hover:translate-y-[-8px] hover:rotate-3 hover:text-blue-600"
+          className="
+          inline-block
+            animate-bounce duration-[3s]
+            lg:animate-none 
+            lg:inline-block lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out
+            lg:hover:translate-y-[-8px] lg:hover:rotate-3 lg:hover:text-blue-600
+          "
         >
           Projets
         </Link>
@@ -15,7 +20,13 @@ const Menu = () => {
       <li>
         <Link
           to="/meContacter"
-          className="inline-block transition-transform duration-300 ease-in-out transform hover:translate-y-[-8px] hover:rotate-3 hover:text-blue-600"
+          className="
+            inline-block
+            animate-bounce duration-[3s]
+            lg:animate-none 
+            lg:inline-block lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out
+            lg:hover:translate-y-[-8px] lg:hover:rotate-3 lg:hover:text-blue-600
+          "
         >
           Contact
         </Link>
@@ -23,7 +34,13 @@ const Menu = () => {
       <li>
         <Link
           to="/about"
-          className="inline-block transition-transform duration-300 ease-in-out transform hover:translate-y-[-8px] hover:rotate-3 hover:text-blue-600"
+          className="
+            inline-block
+            animate-bounce duration-[3s]
+            lg:animate-none 
+            lg:inline-block lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out
+            lg:hover:translate-y-[-8px] lg:hover:rotate-3 lg:hover:text-blue-600
+          "
         >
           À propos
         </Link>
@@ -31,7 +48,13 @@ const Menu = () => {
       <li>
         <Link
           to="/social"
-          className="inline-block transition-transform duration-300 ease-in-out transform hover:translate-y-[-8px] hover:rotate-3 hover:text-blue-600"
+          className="
+            inline-block
+            animate-bounce duration-[3s]
+            lg:animate-none 
+            lg:inline-block lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out
+            lg:hover:translate-y-[-8px] lg:hover:rotate-3 lg:hover:text-blue-600
+          "
         >
           Mes Réseaux
         </Link>
@@ -41,5 +64,7 @@ const Menu = () => {
 };
 
 export default Menu;
+
+
 
 

@@ -36,6 +36,19 @@ const SocialNetwork = () => {
               />
             </a>
           </li>
+          <li className="mt-10">
+            <a
+              href="/meContacter"
+              className="flex items-center justify-center gap-2 hover:text-blue-800 hover:font-bold transition-all duration-200"
+            >
+              Me contacter
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2324/2324708.png"
+                alt="Contact"
+                className="w-8 h-8 inline-block transition-transform duration-300 transform hover:scale-125 hover:rotate-6"
+              />
+            </a>
+          </li>
         </ul>
       </p>
     </div>

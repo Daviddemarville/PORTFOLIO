@@ -30,7 +30,7 @@ function AppWrapper() {
        <Header /> 
       </header>  
 
-      <main className="pb-20 flex flex-col md:flex-row justify-center items-stretch items-center">
+      <main className="pb-20 flex flex-col md:flex-row justify-center items-stretch">
       <section className={`w-[99%] pl-1 md:pr-2 md:pl-4 ${showScreenTwo ? "md:w-[50%]" : ""}`}>
   <ScreenOne>
     <Routes>

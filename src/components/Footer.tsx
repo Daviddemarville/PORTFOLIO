@@ -1,17 +1,28 @@
 import { useState } from 'react';
-import Counter from './Counter'; // Importer Counter pour récupérer les stats
-import VisitorModal from './VisitorModal'; // Importer le Modal
+import { useNavigate } from 'react-router-dom'; // Ajouté
+import Counter from './Counter';
+import VisitorModal from './VisitorModal';
 
 const Footer = () => {
-  const { visitCount, formattedDate, formattedTime } = Counter(); // Utiliser les données de Counter
+  const { visitCount, formattedDate, formattedTime } = Counter();
   const currentYear = new Date().getFullYear();
 
-  // Gestion de l'état pour ouvrir/fermer le modal
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate(); // Ajouté
 
-  // Fonction pour ouvrir et fermer le modal
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+  };
+
+  // Redirige vers /about et scrolle à #mentions après le rendu
+  const goToMentions = () => {
+    navigate('/about');
+    setTimeout(() => {
+      const section = document.getElementById('mentions');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // petit délai pour attendre le rendu
   };
 
   return (
@@ -22,18 +33,21 @@ const Footer = () => {
         </p>
       </div>
 
-      <div>
-        <p className="text-sm">&copy; {currentYear} David dM - Tous droits réservés</p>
+      <div className="flex flex-col-reverse">
+        
+          <button onClick={goToMentions} className=" text-sm hover:underline">
+            Mentions légales & Politique de confidentialité
+          </button>{' '}
+          <p className="text-sm"> &copy; {currentYear} David dM - Tous droits réservés
+        </p>
       </div>
 
       <div className="visiteur">
-        {/* Texte pour déclencher l'ouverture du modal */}
         <p className="text-sm cursor-pointer" onClick={toggleModal}>
           <strong>Voir le nombre de visiteurs</strong>
         </p>
       </div>
 
-      {/* Modal affiché quand l'état est true */}
       {isModalOpen && (
         <VisitorModal visitCount={visitCount} closeModal={toggleModal} />
       )}
@@ -42,4 +56,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
