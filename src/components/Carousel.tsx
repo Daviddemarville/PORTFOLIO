@@ -17,9 +17,7 @@ const Carousel: React.FC<Props> = ({ projet }) => {
   };
 
   const prevSlide = () => {
-    setCurrent((prev) =>
-      prev === 0 ? projet.images.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? projet.images.length - 1 : prev - 1));
   };
 
   return (
@@ -30,12 +28,14 @@ const Carousel: React.FC<Props> = ({ projet }) => {
         className="w-full h-full object-cover rounded-lg transition-all duration-300"
       />
       <button
+        type="button"
         onClick={prevSlide}
         className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/70 rounded-full p-2"
       >
         ◀
       </button>
       <button
+        type="button"
         onClick={nextSlide}
         className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/70 rounded-full p-2"
       >
